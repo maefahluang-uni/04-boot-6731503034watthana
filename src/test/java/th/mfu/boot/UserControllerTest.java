@@ -63,7 +63,7 @@ public class UserControllerTest {
         assertEquals("User registered successfully", response1.getBody());
 
         assertEquals(HttpStatus.CONFLICT, response2.getStatusCode());
-        assertEquals("Username already exists", response2.getBody());
+        assertEquals("User already exists", response2.getBody());
 
     }
 
