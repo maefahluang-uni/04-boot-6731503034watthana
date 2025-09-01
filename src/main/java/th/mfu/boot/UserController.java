@@ -20,7 +20,7 @@ public class UserController {
         // ถ้ามี username อยู่แล้ว → ส่งกลับ 409 CONFLICT
         if (users.containsKey(user.getUsername())) {
             return ResponseEntity.status(HttpStatus.CONFLICT)
-                                 .body("User already exists");
+                                 .body("Username already exists");
         }
 
         // เพิ่มผู้ใช้ใหม่ → ส่งกลับ 201 CREATED
