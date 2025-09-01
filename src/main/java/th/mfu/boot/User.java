@@ -32,7 +32,7 @@ public class User {
     }
 
     public String getEmail(){
-        return displayname;
+        return email;
     }
 
     public void setEmail(String email){
